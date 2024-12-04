@@ -1,5 +1,13 @@
 body{
     background: #6c5ce7;
+    color: black;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.night-mode {
+    background-color: #2c3e50;
+    color: white;
 }
 
 .navbar {
@@ -40,30 +48,6 @@ body{
         text-decoration: dotted;
     }
     
-    /* .user-account {
-    display: flex;
-    align-items: center;
-    }
-    
-    .user-account a {
-    margin-right: 10px;
-    }
-    
-    .additional-features {
-    display: flex;
-    align-items: center;
-    }
-    
-    .night-mode-toggle {
-    background-color: #6c5ce7;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    }
-     */
-
     .content-box{
         max-height:1000px;
         min-width: 200px;
@@ -71,9 +55,62 @@ body{
         border-radius: 5px;
     }
 
-    .content-box p{
+    /* .content-box p{
         font-size: 15px;
         color: #6c5ce7;
         font-family: monospace;
         font-weight: 200;
+    } */
+    /* toogle button for text change */
+   #text {
+    color:#6c5ce7;
+    font-size: 15px;
+    font-weight: 200;
+    font-family: monospace;
+    transition: color 0.3s;
+}
+
+   button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+   button:hover {
+    background-color: #2980b9;
+}
+
+    /* toogle button css here */
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        background-color: #3498db;
+        color: white;
+        border: none;
+        border-radius: 5px;
+    }
+    
+    button:hover {
+        background-color: #2980b9;
+    }
+    footer{
+        margin-left:25%;
+        width: 50%;
+        background: #212121;
+        color: white;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 25px;
+        font-weight: 400;
+        font-family: monospace;
+    }
+
+    footer:hover{
+        color: #6c5ce7;
     }
